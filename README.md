@@ -6,7 +6,7 @@
 
 ### Dataset preparation
 
-You can download the preprocessed dataset from [HERE](https://drive.google.com/file/d/1lWG5g45CXN-OCPR1u6TEcJwYW1qx-Qv8/view?usp=sharing) and unzip it.
+You can download the preprocessed dataset from [HERE](https://drive.google.com/file/d/1Z4po8rktps_lpE5VOl3hIpEwV9kLFyjJ/view?usp=share_link) and unzip it.
 
 The folder structure should be organized as follows.
 
