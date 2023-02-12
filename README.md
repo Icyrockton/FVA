@@ -55,7 +55,7 @@ unzip joern-cli.zip
 ```
 
 ### Result
-We compared the performance with the other four baselines, average performance is reported in the following table.
+We compared the performance with the other four baselines, average performance is reported in the following table. If you want to see more detailed result, see the paper.
 
 **_average performance_**
 
@@ -66,16 +66,6 @@ We compared the performance with the other four baselines, average performance i
 | Func<sub>_LGBM_</sub> |   0.850   | **0.858** |   0.719   |   0.754   |   0.673   |
 | Func<sub>_RF_</sub>   |   0.820   |   0.828   |   0.667   |   0.699   |   0.632   |
 | FVA                   | **0.869** |   0.789   | **0.813** | **0.795** | **0.727** |
-
-
-We also provide the training and testing time of models as a reference.
-
-**_computation cost(s)_**
-
-|       | DeepCVA | CodeBERT | Func<sub>_LGBM_</sub> | Func<sub>_RF_</sub> | **FVA**  |
-|:------|:-------:|:--------:|:---------------------:|:-------------------:|:--------:|
-| Train | 4066.00 | 2821.00  |        394.71         |        6.66         | 18846.00 |
-| Test  |  11.30  |   2.70   |         0.07          |        0.77         |  30.30   |
 
 
 ### Reproducing Results
@@ -228,6 +218,18 @@ context_type = 'nature'
 token_type = 'codebert'
 gnn_type = "SAGEConv"
 ```
+
+### Misc
+
+We also provide the training and testing time of models as a reference.
+
+**_computation cost(s)_**
+
+|       | DeepCVA | CodeBERT | Func<sub>_LGBM_</sub> | Func<sub>_RF_</sub> | **FVA**  |
+|:------|:-------:|:--------:|:---------------------:|:-------------------:|:--------:|
+| Train | 4066.00 | 2821.00  |        394.71         |        6.66         | 18846.00 |
+| Test  |  11.30  |   2.70   |         0.07          |        0.77         |  30.30   |
+
 
 
 
