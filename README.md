@@ -54,6 +54,30 @@ unzip joern-cli.zip
 # we use script/joern.py to call joern
 ```
 
+### Result
+We compared the performance with the other four baselines, average performance is reported in the following table.
+
+**_average performance_**
+
+| Model                 | Accuracy  | Precision |  Recall   | F1-score  |    MCC    |
+|-----------------------|:---------:|:---------:|:---------:|:---------:|:---------:|
+| DeepCVA               |   0.855   |   0.759   |   0.708   |   0.725   |   0.604   |
+| CodeBERT              |   0.845   |   0.738   |   0.692   |   0.705   |   0.637   |
+| Func<sub>_LGBM_</sub> |   0.850   | **0.858** |   0.719   |   0.754   |   0.673   |
+| Func<sub>_RF_</sub>   |   0.820   |   0.828   |   0.667   |   0.699   |   0.632   |
+| FVA                   | **0.869** |   0.789   | **0.813** | **0.795** | **0.727** |
+
+
+We also provide the training and testing time of models as a reference.
+
+**_computation cost(s)_**
+
+|       | DeepCVA | CodeBERT | Func<sub>_LGBM_</sub> | Func<sub>_RF_</sub> | **FVA**  |
+|:------|:-------:|:--------:|:---------------------:|:-------------------:|:--------:|
+| Train | 4066.00 | 2821.00  |        394.71         |        6.66         | 18846.00 |
+| Test  |  11.30  |   2.70   |         0.07          |        0.77         |  30.30   |
+
+
 ### Reproducing Results
 
 FVA support different node embeddings, context selections and graph models.
@@ -64,7 +88,7 @@ Our node embedding supports four options
 - textcnn
 - lstm
 
-Context selection supports four options(Parentheses describe the abbreviations used in our paper)
+Context selection supports four options(Parentheses describe the abbreviations used in our paper).
 - nature(one-line context)
 - data_flow(data dependency context)
 - control_flow(control dependency context)
@@ -87,7 +111,7 @@ gnn_type = "gcn"
 In RQ1 , we compared to baseline models for function-level SV assessment.
 
 We set up the FVA with the following configuration (one-line context, CodeBERT for
-node embedding, and GCN for graph model)
+node embedding, and GCN for graph model).
 ```python
 # gcn/multi_task/main.py
 context_type = 'nature'
@@ -102,7 +126,7 @@ cd gcb/multi_task
 CUDA_VISIBLE_DEVICES=0 python ./main.py
 ```
 
-The other four baseline models are in the following directories
+The other four baseline models are in the following directories.
 ```text
 gcn
 ├── Deepcva             # DeepCVA model
@@ -204,5 +228,7 @@ context_type = 'nature'
 token_type = 'codebert'
 gnn_type = "SAGEConv"
 ```
+
+
 
 ### Citation
