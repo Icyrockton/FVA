@@ -33,7 +33,7 @@ We also provide dataset processing scripts, please refer to `Data_processing/rea
 conda environment and dataset installation
 ```shell
 # clone this project  
-git cloen https://xxxx/FVA.git
+git clone https://xxxx/FVA.git
 cd FVA
 
 # create conda environment FVA 
