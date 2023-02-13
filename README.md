@@ -39,8 +39,8 @@ cd FVA
 # create conda environment FVA 
 conda env create -f environment.yml
 
-# move FVA_v1_data.zip uncompressed files to FVA/Data
-mv FVA_v1_data/* ./data
+# move FVA_data.zip uncompressed files to FVA/Data
+mv FVA_data/* ./data
 ```
 
 Joern installation
