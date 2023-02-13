@@ -225,7 +225,7 @@ We also provide the training and testing time of models as a reference.
 
 **_computation cost(s)_**
 
-|       | DeepCVA | CodeBERT | Func<sub>_LGBM_</sub> | Func<sub>_RF_</sub> | FVA  |
+|       | DeepCVA | CodeBERT | Func<sub>_LGBM_</sub> | Func<sub>_RF_</sub> |   FVA    |
 |:------|:-------:|:--------:|:---------------------:|:-------------------:|:--------:|
 | Train | 4066.00 | 2821.00  |        394.71         |        6.66         | 18846.00 |
 | Test  |  11.30  |   2.70   |         0.07          |        0.77         |  30.30   |
