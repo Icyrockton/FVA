@@ -18,7 +18,7 @@ FVA_data.zip
 ```
 
 The project will read the `mydata_split.csv` file, which contains the information about the division of the dataset. Each row corresponds to a function where the fields starting with `cvss2_` store the Vulnerability Metrics.
-`func_after` represents the function with the vulnerability, `func_before` represents the function after the vulnerability is fixed.
+`func_before` represents the function with the vulnerability, `func_after` represents the function after the vulnerability is fixed.
 `pre_context` and `cur_context` record the context information of the vulnerable statements.
 
 We also provide dataset processing scripts, please refer to `Data_processing/readme.md` and `Data_processing/blaming/data/readme.md` 
